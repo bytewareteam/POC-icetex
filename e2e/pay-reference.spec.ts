@@ -2,7 +2,7 @@ import {expect, test} from "@playwright/test";
 
 test.describe('Referencias de pago', () => {
     test('Crear referencia de pago', async ({request}) => {
-        const REFERENCE_CODE = '1234';
+        const REFERENCE_CODE = '2934535052024031603';
         const referenceResponse = await request.get(`api/TU/getReferenciaPago?referenciaPago=${REFERENCE_CODE}`);
         expect(referenceResponse.ok()).toBeTruthy();
 

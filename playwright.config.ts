@@ -30,8 +30,7 @@ export default defineConfig({
     trace: 'on-first-retry',
   },
   projects: [
-    { name: 'setup', testMatch: /.*\.setup\.ts/ },
-    { name: 'specs', testMatch: /.*\.spec\.ts/, dependencies: ['setup'] },
+    { name: 'specs', testMatch: /.*\.spec\.ts/},
   ],
 
   /* Run your local dev server before starting the tests */
